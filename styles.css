@@ -1,0 +1,40 @@
+:root{
+    --headingText:blue;
+    --bodyText:purple;
+
+    --primaryColor: grey;
+    --secondaryColor: white;
+
+    --edgeColor: black;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3{
+    color: var(--headingText);
+}
+
+p, li, span, label, input{
+    color: var(--bodyText);
+}
+
+.main-container{
+    width:1200px;
+    margin: 0 auto;
+}
+
+.sectionA{
+    background-color: var(--primaryColor);
+    border-bottom: 1px solid var(--edgeColor);
+    overflow: auto;
+}
+
+.sectionB{
+    background-color: var(--secondaryColor);
+    border-bottom: 1px solid var(--edgeColor);
+    overflow: auto;
+}
+
