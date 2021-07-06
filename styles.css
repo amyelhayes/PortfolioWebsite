@@ -13,12 +13,32 @@ html, body{
     margin: 0;
 }
 
+h1{ font-size: 56; }
+h2{ font-size: 36; }
+h3{ font-size: 28; }
+h4{ font-size: 24; }
+h5{ font-size: 20; }
+h6{ font-size: 16; }
+
 h1, h2, h3{
     color: var(--headingText);
+    font-family: 'Prosto One', cursive;
 }
 
-p, li, span, label, input{
+p, li, span, label, input, a{
     color: var(--bodyText);
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: chartreuse;
+}
+
+ul{
+    list-style: none;
 }
 
 .main-container{
@@ -38,3 +58,8 @@ p, li, span, label, input{
     overflow: auto;
 }
 
+@media screen and (max-width: 1200px){
+    .main-container{
+        width:95%;
+    }
+}
