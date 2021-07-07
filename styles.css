@@ -2,7 +2,7 @@
     --headingText:blue;
     --bodyText:purple;
 
-    --primaryColor: grey;
+    --primaryColor: rgb(255, 212, 212);
     --secondaryColor: white;
 
     --edgeColor: black;
@@ -30,8 +30,6 @@ p, li, span, label, input, a{
     font-family: 'Roboto Mono', monospace;
 }
 
-
-
 a{
     text-decoration: none;
     color: chartreuse;
@@ -56,6 +54,39 @@ ul{
     background-color: var(--secondaryColor);
     border-bottom: 1px solid var(--edgeColor);
     overflow: auto;
+}
+
+.welcome-message-container{
+    display: grid;
+    text-align: center;
+    align-content: center;
+    border: 2px dashed red;
+    min-height: 10em ;
+}
+
+.introduction-wrapper{
+    background-color: white;
+    box-shadow: 7px 6px 9px 0px rgba(0, 0, 0, 1);
+    border-radius: 4px 4px 4px 4px;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 3em 30em;              
+    grid-template-areas: 
+        'nav-wrapper nav-wrapper'
+        'left-wrapper right-wrapper'
+    ;
+}
+
+.navigation-wrapper{
+    grid-area: nav-wrapper;
+}
+
+.left-wrapper{
+    grid-area: left-wrapper;
+}
+
+.right-wrapper{
+    grid-area: right-wrapper;
 }
 
 @media screen and (max-width: 1200px){
